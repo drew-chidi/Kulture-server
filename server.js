@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(morgan('tiny'));
 app.disable('x-powered-by');
 
-app.use('/api/beat', require('./routes/beatRoutes'));
+app.use('/api/beats', require('./routes/beatRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 
 app.use(errorHandler);
